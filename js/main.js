@@ -13,11 +13,7 @@ $(function() {
 			}
 		})
 	).done(function(){
-		for(var i in data_ary){
-			$(".result").text(array[i]);
-		}
-		
-
+		$(".result").text(data_ary);
 	
 	});
 
