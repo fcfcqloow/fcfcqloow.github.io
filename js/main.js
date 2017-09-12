@@ -1,24 +1,35 @@
+/*
+*/
+
+var slide = true;
+var body = "<div class = 'menu' id = 'menu'>" + 
+				"<div class = 'link' id = 'home'></div>" + 
+				"<div class = 'link' id = 'task'></div>" + 
+				"<div class = 'link' id = 'download'></div>" + 
+				"<div class = 'link' id = 'empty'></div>" + 
+			"</div>" + 
+			" <div class = 'menu' id = 'menuButton'></div>";
 $(function() {
-	var data_ary = ["2"];
-	var array = [];
-	$.when(
-		$.ajax({
-			url: "text.txt",
-			type: "get",
-			success : function(data) {
-				data_ary = data.split("\n");
-			},
-			error:function(data) {
-				alert("申し訳ありません。chrome以外で起動してください");
-			}
-		})
-	).done(function(){
-		$(".result").text(data_ary);
-	
-	});
+  $('body').append(body);
+  $('#menuButton').click(function(){
+  	if(slide){
+    	$('.menu').animate({"left": "+=20%"}, "slow");
+    	slide = false;
+	}else{
+		$('.menu').animate({"left": "-=20%"}, "slow");
+    	slide = true;
+	}
+  });
 
+
+  $('.link').click(function(){
+  	console.log(this.id);
+  		if(this.id === 'download'){	
+  			window.location.href = "../html/download.htm";
+  		}else if(this.id === 'task'){	
+  			window.location.href = "../html/task.html";
+  		}else if(this.id === 'home'){	
+  			window.location.href = "../html/index.html";
+  		}
+  });
 });
-
-function texts(){
-	return ""
-}

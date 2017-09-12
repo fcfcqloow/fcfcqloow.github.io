@@ -1,0 +1,35 @@
+#date{
+	margin-top: 5%;
+	width: 60%;
+		table{
+
+			width: 100%;
+		}
+		tr{
+			width: 100%;
+			
+		}
+		td{
+			
+			border-bottom: inset 1px #faa;
+			width: 50%;
+		}
+}
+.dates{
+	border-left: inset 1px #faa;
+	font-size: 20px;
+}
+.values{
+	border-right: inset 1px #faa;
+	font-size: 20px;
+}
+
+#title{
+	font-size: 60px !important;
+	text-align: center;
+
+}
+body, html{
+	height: 0;
+
+}

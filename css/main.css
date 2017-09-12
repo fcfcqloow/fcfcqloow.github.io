@@ -1,6 +1,54 @@
-#main {
-  width: 1024px; }
-  #main p {
-    margin: 0; }
+.menu {
+  background: #dbb;
+  text-align: contain;
+  position: absolute;
+  opacity: 1; }
 
-/*# sourceMappingURL=style.css.map */
+.link {
+  height: 20%;
+  font-size: 100%;
+  opacity: 1; }
+.link:hover {
+  cursor: pointer;
+  opacity: 0.7; }
+
+#home {
+  background-image: url("../image/HOME.png");
+  background-size: 100% 100%; }
+
+#task {
+  background-image: url("../image/task.png");
+  background-size: 100% 100%; }
+
+#download {
+  background-image: url("../image/DOWNLOAD.png");
+  background-size: 100% 100%; }
+
+#menu {
+  width: 20%;
+  height: 100%;
+  left: -20%;
+  top: 0; }
+#menu a {
+  display: block;
+  margin-top: 10%; }
+
+#menuButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  top: 0; }
+#menuButton:hover {
+  opacity: 0.7;
+  cursor: pointer; }
+
+/*
+html {
+    height: 100%;
+}
+body{
+	margin: 0;
+	height: 100%;
+}*/
+
+/*# sourceMappingURL=main.css.map */
