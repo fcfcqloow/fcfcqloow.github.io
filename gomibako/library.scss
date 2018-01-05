@@ -1,0 +1,30 @@
+@mixin web5($property, $value) {
+     @each $prefix in -webkit-, -moz-, -ms-, -o-, '' {
+          #{$prefix}#{$property}: $value;
+     }
+}
+@mixin animation($name) {
+	@include web5(animation,$name);
+	@include web5(animation-fill-mode,both);
+}
+@mixin keyframes($animation-name: animaton) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+@mixin maxWidth($p) {
+  @media only screen and (max-width: $p) {
+    @content;
+  }
+}
+@mixin minWidth($p) {
+  @media only screen and (min-width: $p) {
+    @content;
+  }
+}
