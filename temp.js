@@ -2,11 +2,11 @@ $(function(){
 	var count = 0;
 	$("#link").click(function(event) {
 		$("footer").html('<p id="link"> Link (。´･ω･) </p> '+ 
-			'<a href="./kuzu/howTo_ver1.txt" download="howTo_ver1.txts">About library for java(ver1)　/　</a>' +
+			'<a href="./kuzu/howTo_ver1.txt" download="howTo_ver1.txt">About library for java(ver1)　/　</a>' +
 			'<a href="./kuzu/howTo_ver2.txt" download="howTo_ver2.txt">About library for java(ver2)　/　</a><br>' + 
 			'<a href="./kuzu/code1.txt" download="code_ver1.txt">Code for java(ver1)　/　</a>' +
-			'<a href="./kuzu/code2.1.txt" download="code_ver2.txt">Code for java(ver2)　/　</a><br>' +
-				'<a href="./kuzu/code3.0.4.txt" download="code_ver3.0.4.txt">Code for java(ver3)　/　</a><br>' +
+			'<a href="./kuzu/code2.1.txt" download="code_ver2.txt">Code for java(ver2)　/　</a>' +
+			'<a href="./kuzu/code3.0.4.txt" download="code_ver3.0.4.txt">Code for java(ver3)　/　</a><br>' +
 			'<a href="./gomibako/java/TwitterControll.java" download="TwitterControll.java">TwitterController for Twitter4j&nbsp</a> <br><br>' +
 			'<a href="https://developers.google.com/speed/libraries/">jquery by google</a><br>' +
 			'<a href="http://sass-lang.com/install">scss install</a><br>' +
