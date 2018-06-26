@@ -12,6 +12,7 @@ $(function(){
 			'<a href="http://sass-lang.com/install">scss install</a><br>' +
 			'<a href="https://www.java.com/ja/">java download</a><br>' +
 			'<a href="http://twitter4j.org/ja/index.html">Twitter4j</a><br>' +
+			'<a href="https://hackmd.io/e5rhXmW3QZ-VtvT-J5FFQg?both">Hackmd</a><br>' +
 			'<br>'
 			);
 
