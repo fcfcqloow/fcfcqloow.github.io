@@ -1,0 +1,211 @@
+import static daoda.Next.*;
+で使用可能
+
+*********************************************************************************************************************
+
+
+
+
+
+
+使用可能変数
+
+con [] : actionを持てる。配列(Consumer)
+
+Scan : Scanner(Systemm.in)がそもそも使える。(標準入力があるので実際には不要)
+
+Memo : String で、てきとうに作った（100%不要） 
+
+
+yellow : yellow.println()などが可能
+purple : purple.println()などが可能
+white : while.println()などが可能
+green : green.println()などが可能
+black : black.println()などが可能
+blue : blue.println()などが可能
+cyan : cyan.println()などが可能
+red : red.println()などが可能
+
+
+
+
+
+
+標準出力
+
+pn() : = println()
+
+p() : = print()
+
+pTF(boolean, out, out) : println(1 == 0, "True", "False")
+
+println(value),print(value)
+
+ePrint(value),ePrintln(value) : err表示
+
+arrayPrint((joins),values),arrayPrintln(values) : 配列表示
+
+
+
+
+
+
+
+標準入力
+
+readInt() : intでコンソールから入力
+
+readLong() : longでコンソールから入力
+
+readFloat() : floatでコンソールから入力
+
+readDouble() : doubleでコンソールから入力
+
+read() : Stringでコンソールから入力
+
+readLine() : Stringかつ一行でコンソールから入力
+
+hasRead() : 入力があるとtrueを返す
+
+
+
+
+
+
+
+
+保存と読み込み
+
+saveText(file, values) : テキストで保存
+
+readText(file) : テキストで読み込み
+
+saveObject(t, file) : オブジェクトで保存
+
+readObject(file) : オブジェクトで読み込み
+createSingleJson(T classes) : 簡単なjsonの作成
+
+saveProperties(Map<String, String> map, file) : 保存property
+
+loadProperties(file) : Propertiesを読み込む 
+copyFile(in, out) : ファイルをコピーする
+
+copyFiles(File in, File outDir) : outDirにin(フォルダーをコピーする)
+
+
+
+
+
+日付関連
+
+getSecondNow() : 秒
+
+getMinuteNow() : 分
+
+getHourNow() : 時
+
+getMonthNow():月
+
+getYearNow() : 年
+
+
+
+
+
+
+
+
+計算関連
+
+sum(list),
+multiple(list),
+max(list),
+min(list) 
+-> +Double 対応
+
+
+
+
+
+
+
+for関連
+
+fors(count, action)
+
+
+
+
+
+
+
+
+タイプコントローラー
+
+asList(values) : 配列 to リスト
+
+listToArray(List list) :　リスト　to 配列
+
+str(t) : String.valueOf(t)
+
+reverse(string) : 反転
+
+stringFindChars(sentence, findCharactor) : charの場所をIntegerListで返す
+
+strForWindows(String sentence) ; \nを\r\nにへんこうする。
+
+
+
+
+
+
+
+OSコントローラー
+
+doCMD((judge), string []) : コマンド実行。もしtrueであればコンソールに表示可能
+
+getCMD(string [] cmd) : Processクラスを返す（doCMDとそこまで変わらないがdestroy()を行わない）
+
+doProcess((boolean), string []) : doCMDの改良版
+
+doProcessValue((boolean), string []) : 結果をstringで返す
+
+getProcess(string []) : Processクラスを返す（destroy()を行わない）
+
+saveProperties(Map<String, String>, file) : fileにMapをPropertiesクラスで保存
+
+loadProperties(file, key) : keyで指定された値をPropertiesクラス形式のファイルからStringで返す。
+
+finish() : プログラムを終了させる。
+
+showProperty() : コンピュータの情報を表示
+
+getProperty(key) : 指定されたコンピュータ情報をStringで取得する。
+
+watchingFile(file, sec(更新時間)) : 指定のファイルを監視して変更されるまで待つ
+
+
+
+
+
+
+Desktop api
+
+edit(file) : fileを編集目的で起動
+
+open(file) : fileを起動
+
+browse(url) : URIインターフェイスで引数をとりデフォルトブラウザでアクセスを行う
+
+getScreen() : Imageでスクリーンショットを返す。
+
+putScreen(File dir, String filename) : 指定されたディレクトリにfilename.pngで保存する。
+
+showDialog(String tittle, String value, int w, int h)　: dialogを表示
+
+closeDialog(String tittle, String value, int w, int h) : dialogをクローズ
+
+
+TOOLs
+sleep(minSecond) : sleep関数 
+
